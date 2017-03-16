@@ -1,14 +1,6 @@
 var body          = document.querySelector('body'),
     header        = body.querySelector('.header'),
-    title         = header.querySelector('.header--parallax'),
-    slider        = body.querySelector('.portfolio--slider'),
-    projects      = body.querySelectorAll('.portfolio--slider--project'),
-    btn_prev      = body.querySelector('.portfolio--slider--previous'),
-    btn_next      = body.querySelector('.portfolio--slider--next');
-
-console.log(body.querySelector('.portfolio--slider'));
-console.log(body.querySelector('.portfolio--slider--previous'));
-console.log(body.querySelector('.portfolio--slider--next'));
+    title         = header.querySelector('.header--parallax');
 
 // header cover
 function cover()
@@ -39,20 +31,3 @@ function paralax()
 // {
 //   window.requestAnimationFrame(paralax);
 // });
-
-// slider
-var i = 0;
-btn_next.addEventListener('click', function(event)
-{
-  i++;
-  if (i == 4){ i = 0; }
-  slider.style.transform = "translateX(-" + i * 25 + "%)";
-  event.preventDefault();
-});
-btn_prev.addEventListener('click', function(event)
-{
-  i--;
-  if (i == -1){ i = 2; }
-  slider.style.transform = "translateX(-" + i * 25 + "%)";
-  event.preventDefault();
-});

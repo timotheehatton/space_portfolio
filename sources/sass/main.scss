@@ -26,6 +26,7 @@ body {
   font-family: andale, serif;
   font-weight: 100;
   color: $secondary_color;
+  background-color: #fff;
 }
 
 .title {
@@ -411,6 +412,7 @@ body {
   &--content {
     width: 60%;
     margin-top: 140px;
+    padding-right: 40px;
     @media screen and (max-width: 1100px) {
       width: auto;
       margin-top: 0px;
@@ -566,6 +568,9 @@ body {
     &--project {
       text-align: center;
       margin-bottom: 200px;
+      @media screen and (max-width: 500px) {
+        margin-bottom: 100px;
+      }
       &::after {
         content: '';
         display: inline-block;
@@ -573,6 +578,9 @@ body {
         width: 300px;
         background-color: #fff;
         margin-top: 200px;
+        @media screen and (max-width: 500px) {
+          margin-top: 100px;
+        }
       }
       &:nth-child(2){
         .portfolio--slider--project--title--secondary {
@@ -602,6 +610,15 @@ body {
         margin: 0 auto;
         width: 60%;
         margin-bottom: 20px;
+        @media screen and (max-width: 1000px) {
+          width: 70%;
+        }
+        @media screen and (max-width: 700px) {
+          width: 80%;
+        }
+        @media screen and (max-width: 500px) {
+          width: 95%;
+        }
         &::before {
           content: '';
           width: 1px;
@@ -613,22 +630,46 @@ body {
         }
         &--primary {
           font-size: 48px;
+          @media screen and (max-width: 500px) {
+            font-size: 35px;
+          }
         }
         &--secondary {
           font-size: 24px;
           letter-spacing: 1px;
+          @media screen and (max-width: 500px) {
+            font-size: 18px;
+          }
         }
       }
       &--img {
         width: 60%;
         box-shadow: 0px 10px 20px rgba(#000,.50);
         margin-bottom: 70px;
+        @media screen and (max-width: 1000px) {
+          width: 70%;
+        }
+        @media screen and (max-width: 700px) {
+          width: 80%;
+        }
+        @media screen and (max-width: 500px) {
+          width: 95%;
+        }
       }
       &--txt {
         text-align: left;
         line-height: 30px;
         margin: 0 auto;
         width: 60%;
+        @media screen and (max-width: 1000px) {
+          width: 70%;
+        }
+        @media screen and (max-width: 700px) {
+          width: 80%;
+        }
+        @media screen and (max-width: 500px) {
+          width: 95%;
+        }
         &--tools {
           display: block;
           margin-top: 10px;
@@ -670,6 +711,11 @@ body {
         font-family: andale, serif;
         opacity: 0;
         transition-duration: .3s;
+        @media screen and (max-width: 500px) {
+          margin-left: -30px;
+          width: 60px;
+          font-size: 12px;
+        }
       }
       &:hover::after {
         opacity: 1;
